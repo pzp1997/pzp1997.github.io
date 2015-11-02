@@ -18,10 +18,10 @@ small {
   font-size: 1em
 }
 a, a:hover, a:visited, a:active {
-  color: #000;
+  color: #607D8B;
   font-weight: bold;
   text-decoration: none
 }
 a:hover {
-  color: #555;
+  color: #00BCD4;
 }
