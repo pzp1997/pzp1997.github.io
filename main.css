@@ -32,9 +32,19 @@ body {
 
 /* Footer */
 
-footer {
-  padding-bottom: 20px
+html {
+  position: relative;
+  min-height: 100%
 }
-small {
+body {
+  margin-bottom: 60px
+}
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: 60px
+}
+.footer small {
   font-size: 1em
 }
