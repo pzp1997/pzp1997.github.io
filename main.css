@@ -23,11 +23,16 @@ a:hover {
 
 /* Navbar */
 
-body {
-  padding-top: 60px
+.navbar {
+  background-color: transparent;
+  border: none;
 }
 .navbar-nav a {
-  font-weight: normal
+  font-weight: normal;
+  border-bottom: 2px solid transparent
+}
+.navbar-nav a:hover {
+  border-bottom: 2px solid #333
 }
 
 /* Footer */
