@@ -1,0 +1,27 @@
+<form id="contact-form" method="POST">
+  <div class="form-group">
+    <label>
+      Name
+      <input class="form-control" type="text" name="name" placeholder="John Doe" required>
+    </label>
+  </div>
+  <div class="form-group">
+    <label>
+      Email
+      <input class="form-control" type="email" name="_replyto" placeholder="john.doe@example.com" required>
+    </label>
+  </div>
+  <input type="hidden" name="_subject" value="Contact Palmer">
+  <div class="form-group">
+    <label>
+      Message
+      <textarea class="form-control" name="message" rows="5" placeholder="Your message..." required></textarea>
+    </label>
+  </div>
+  <input type="text" name="_gotcha" style="display:none">
+  <button class="btn" type="submit">
+    <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Send</button>
+</form>
+<script>
+  document.getElementById("contact-form").setAttribute("action", atob("aHR0cDovL2Zvcm1zcHJlZS5pby9wenBhdWwyMDAyQHlhaG9vLmNvbQ=="))
+</script>
