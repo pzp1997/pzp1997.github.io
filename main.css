@@ -20,6 +20,10 @@ a:active {
 a:hover {
   color: #00BCD4
 }
+.heading {
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase
+}
 
 /* Navbar */
 
