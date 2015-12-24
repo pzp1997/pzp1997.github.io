@@ -3,18 +3,20 @@
   border-radius: 0
 }
 .btn {
-  width: 50%;
-  max-width: 260px;
-  min-width: 130px;
+  max-width: 360px;
   background-color: #337ab7;
-  border: 1px solid #337ab7;
+  border: 2px solid #337ab7;
   color: #fff
 }
 .btn:hover {
   background-color: #fff;
-  border: 1px solid #337ab7;
+  border: 2px solid #337ab7;
   color: #337ab7
 }
-.form-group > label {
+.form-group > label,
+.btn {
   width: 100%
+}
+.panel-title {
+  display: inline-block
 }

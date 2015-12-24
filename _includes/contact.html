@@ -8,18 +8,30 @@
   </p>
 
   <div class="row">
-    <div class="col-sm-7 col-xs-5">
-      <p class="text-center">
-        <strong>Email</strong>
-      </p>
-      {% include formspree.html %}
+    <div class="col-sm-7 col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title"><strong>Email</strong></p>
+        </div>
+        <div class="panel-body">
+          {% include formspree.html %}
+        </div>
+      </div>
     </div>
-    <div class="col-sm-5 col-xs-7">
-      <p class="text-center">
-        <strong>Twitter</strong>
-      </p>
-      <a class="twitter-timeline" href="https://twitter.com/pzp1997" data-widget-id="670325541493481472" data-chrome="noborders">>Tweets by @pzp1997</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div class="col-sm-5 col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title"><strong>Twitter</strong></p>
+          <div class="pull-right">
+            <a href="https://twitter.com/pzp1997" class="twitter-follow-button" data-show-count="false"></a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </div>
+        </div>
+        <div class="panel-body">
+          <a class="twitter-timeline" href="https://twitter.com/pzp1997" data-widget-id="670325541493481472" data-chrome="noheader noborder transparent" data-width="700"></a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+      </div>
     </div>
   </div>
 </div>
