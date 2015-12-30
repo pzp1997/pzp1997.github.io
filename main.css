@@ -13,12 +13,12 @@ a,
 a:hover,
 a:visited,
 a:active {
-  color: #607D8B;
+  color: #222;
   font-weight: bold;
-  text-decoration: none
+  font-style: italic
 }
 a:hover {
-  color: #00BCD4
+  color: #555
 }
 .heading {
   font-family: 'Rubik', sans-serif;
@@ -31,12 +31,15 @@ a:hover {
   background-color: transparent;
   border: none;
 }
-.navbar-nav a {
+.navbar a {
+  color: #444;
   font-weight: normal;
+  font-style: normal;
   border-bottom: 2px solid transparent
 }
 .navbar-nav a:hover {
-  border-bottom: 2px solid #333
+  color: #222;
+  border-bottom-color: #222
 }
 
 /* Footer */
