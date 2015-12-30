@@ -6,7 +6,6 @@ body {
 }
 p,
 li {
-  color: #555;
   font-size: 1.25em
 }
 a,
@@ -29,7 +28,7 @@ a:hover {
 
 .navbar {
   background-color: transparent;
-  border: none;
+  border: none
 }
 .navbar a {
   color: #444;
