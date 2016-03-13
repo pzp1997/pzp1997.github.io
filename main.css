@@ -30,15 +30,21 @@ a:hover {
   background-color: transparent;
   border: none
 }
-.navbar a {
-  color: #444;
-  font-weight: normal;
-  font-style: normal;
-  border-bottom: 2px solid transparent
+.navbar .navbar-brand {
+  color: #222 !important;
 }
-.navbar-nav a:hover {
-  color: #222;
-  border-bottom-color: #222
+.navbar a {
+  color: #777 !important;
+  font-style: normal;
+  font-weight: normal;
+  border-bottom: 2px solid transparent;
+}
+.navbar-nav > li > a:hover {
+  color: #222 !important;
+  border-bottom-color: #222;
+}
+.navbar-nav > li > a.active {
+  color: #222 !important;
 }
 
 /* Footer */
