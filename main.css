@@ -21,7 +21,11 @@ a:hover {
 }
 .heading {
   font-family: 'Rubik', sans-serif;
-  text-transform: uppercase
+  text-transform: uppercase;
+}
+.name {
+  font-size: 3.1em;
+  margin-top: -10px;
 }
 
 /* Navbar */
