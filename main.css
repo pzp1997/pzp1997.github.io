@@ -1,5 +1,8 @@
-/* Fonts */
+/***********/
+/** FONTS **/
+/***********/
 
+/* default fonts */
 body {
   font-family: sans-serif;
   color: #333;
@@ -19,6 +22,7 @@ a:active {
 a:hover {
   color: #555
 }
+/* special fonts for page headings, branding, etc. */
 .heading {
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
@@ -28,7 +32,9 @@ a:hover {
   margin-top: -10px;
 }
 
-/* Navbar */
+/************/
+/** NAVBAR **/
+/************/
 
 .navbar {
   background-color: transparent;
@@ -43,16 +49,21 @@ a:hover {
   font-weight: normal;
   border-bottom: 2px solid transparent;
 }
+/* indicate which tab mouse is over */
 .navbar-nav > li > a:hover {
   color: #222 !important;
   border-bottom-color: #222;
 }
+/* indicate active tab */
 .navbar-nav > li > a.active {
   color: #222 !important;
 }
 
-/* Footer */
+/************/
+/** FOOTER **/
+/************/
 
+/* sticky footer */
 html {
   position: relative;
   min-height: 100%
