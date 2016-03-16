@@ -63,6 +63,21 @@ a:hover {
 /** FOOTER **/
 /************/
 
+/* restyle footer for smaller screens */
+.social-links {
+  float: left;
+}
+.footer-text {
+  float: right;
+  text-align: right;
+}
+@media (max-width: 420px) {
+  .social-links,
+  .footer-text {
+    float: none;
+    text-align: center;
+  }
+}
 /* sticky footer */
 html {
   position: relative;
