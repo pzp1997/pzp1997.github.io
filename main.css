@@ -99,4 +99,8 @@ body {
 }
 .social-link .fa {
   margin: 8px 15px;
+  color: #777;
+}
+.social-link .fa:hover {
+  color: #222;
 }
