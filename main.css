@@ -63,14 +63,6 @@ a:hover {
 /** FOOTER **/
 /************/
 
-/* footer layout and positioning */
-.social-links {
-  float: left;
-}
-.footer-text {
-  float: right;
-  text-align: right;
-}
 /* sticky footer */
 html {
   position: relative;
@@ -93,26 +85,33 @@ html {
   color: #222;
 }
 /* restyle footer for smaller screens */
-@media all and (max-width: 420px) {
-  .social-links,
-  .footer-text {
-    float: none;
-    text-align: center;
-  }
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 120px;
-  }
-  .footer {
-    height: 120px;
-  }
+/* mobile first layout */
+.social-links,
+.footer-text {
+  text-align: center;
 }
-@media not all and (max-width: 420px) {
+@media all and (min-width: 420px) {
+  .social-links {
+    float: left;
+  }
+  .footer-text {
+    float: right;
+    text-align: right;
+  }
   body {
     /* Margin bottom by footer height */
     margin-bottom: 80px;
   }
   .footer {
     height: 80px;
+  }
+}
+@media not all and (min-width: 420px) {
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 120px;
+  }
+  .footer {
+    height: 120px;
   }
 }
