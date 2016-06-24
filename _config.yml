@@ -7,3 +7,4 @@ twitter:
 logo: /favicon.png
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
