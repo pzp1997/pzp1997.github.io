@@ -1,0 +1,9 @@
+title: Palmer Paul
+description: Palmer Paul's personal website!
+author:
+  twitter: pzp1997
+twitter:
+  username: pzp1997
+logo: /favicon.png
+gems:
+  - jekyll-seo-tag
