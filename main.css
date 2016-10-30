@@ -5,7 +5,8 @@
 /* default fonts */
 body {
   font-family: sans-serif;
-  color: #333;
+  color: #ddd;
+  background-color: #333;
 }
 p,
 li {
@@ -15,12 +16,13 @@ a,
 a:hover,
 a:visited,
 a:active {
-  color: #222;
+  color: orange;
   font-weight: bold;
-  font-style: italic
 }
 a:hover {
-  color: #555
+  color: orange;
+  font-style: italic;
+  text-decoration: none;
 }
 /* special fonts for page headings, branding, etc. */
 .heading {
@@ -30,6 +32,9 @@ a:hover {
 .name {
   font-size: 3.1em;
   margin-top: -10px;
+}
+.orange {
+  color: orange;
 }
 
 /************/
@@ -41,7 +46,8 @@ a:hover {
   border: none
 }
 .navbar .navbar-brand {
-  color: #222 !important;
+  color: #ddd !important;
+  font-size: 2.25rem;
 }
 .navbar a {
   color: #777 !important;
@@ -49,14 +55,18 @@ a:hover {
   font-weight: normal;
   border-bottom: 2px solid transparent;
 }
-/* indicate which tab mouse is over */
-.navbar-nav > li > a:hover {
-  color: #222 !important;
-  border-bottom-color: #222;
-}
-/* indicate active tab */
+/* indicate which tab mouse is over and active tab */
+.navbar-nav > li > a:hover,
 .navbar-nav > li > a.active {
-  color: #222 !important;
+  color: #ddd !important;
+  border-bottom-color: orange;
+}
+
+.navbar .profile-photo {
+  /*display: inline-block;*/
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
 }
 
 /************/
@@ -82,7 +92,7 @@ html {
   color: #777;
 }
 .social-link .fa:hover {
-  color: #222;
+  color: orange;
 }
 /* restyle footer for smaller screens */
 /* mobile first layout */

@@ -20,3 +20,11 @@
 .panel-title {
   display: inline-block
 }
+.panel-heading {
+  background-color: #555 !important;
+  color: #ddd !important;
+}
+.panel-body {
+  background-color: #555;
+  color: #ddd;
+}
