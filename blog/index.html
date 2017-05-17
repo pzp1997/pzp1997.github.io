@@ -1,0 +1,25 @@
+---
+layout: default
+title: Palmer's Blog
+active: blog
+---
+
+<div class="container">
+    <h1 class="heading orange">Blog</h1>
+    <h1 class="heading name">Palmer Paul</h1>
+    <hr>
+
+    {% for post in site.posts %}
+    <div class="row">
+        <div class="col-md-4">
+            <a href="{{ post.url }}"><h2 style="font-style:normal">{{ post.title }}</h2></a>
+            <p>{{ post.date | date: "%B %e, %Y" }}</p>
+        </div>
+        <div class="col-md-8">
+            {{ post.excerpt }}
+            <a href="{{ post.url }}">Read more...</a>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+</div>

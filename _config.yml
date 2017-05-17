@@ -1,5 +1,7 @@
 title: Palmer Paul
 description: Palmer Paul's personal website!
+url: http://palmerpaul.com
+permalink: /blog/:year/:month/:day/:title/
 author:
   twitter: pzp1997
 twitter:
