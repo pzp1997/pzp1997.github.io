@@ -10,3 +10,9 @@ logo: /favicon.png
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
+defaults:
+  -
+    scope:
+      path: "bower_components/"
+    values:
+      sitemap: false
