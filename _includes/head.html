@@ -8,11 +8,11 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik:500{% for font in page.fonts %}|{{ font }}{% endfor %}" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="/main.css">
   {% for stylesheet in page.stylesheets %}
-  <link rel="stylesheet" type="text/css" href="{{stylesheet}}">
+  <link rel="stylesheet" type="text/css" href="{{ stylesheet }}">
   {% endfor %}
 
   <!--[if lt IE 9]>
