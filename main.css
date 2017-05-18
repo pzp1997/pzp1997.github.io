@@ -4,13 +4,13 @@
 
 /* default fonts */
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', 'Rubik', sans-serif;
   color: #ddd;
   background-color: #333;
 }
 p,
 li {
-  font-size: 1.25em
+  font-size: 1.75rem;
 }
 a,
 a:hover,
@@ -26,16 +26,21 @@ a:hover {
 }
 /* special fonts for page headings, branding, etc. */
 .heading {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 .name {
   font-size: 3.1em;
   margin-top: -10px;
 }
+.signature {
+  font-family: 'Pacifico', 'Lobster', sans-serif;
+  font-size: 2.25rem;
+}
 .orange {
   color: orange;
 }
+
 
 /************/
 /** NAVBAR **/
