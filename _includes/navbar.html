@@ -15,16 +15,16 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/about" {% if page.active == 'about' %}class="active"{% endif %}>About Me</a>
-          </li>
-          <!-- <li>
-            <a href="/portfolio" {% if page.active == 'portfolio' %}class="active"{% endif %}>Portfolio</a>
-          </li> -->
-          <li>
-            <a href="/resume" {% if page.active == 'resume' %}class="active"{% endif %}>R&eacute;sum&eacute;</a>
+            <a href="/about"{% if page.title == 'About' %} class="active"{% endif %}>About</a>
           </li>
           <li>
-            <a href="/contact" {% if page.active == 'contact' %}class="active"{% endif %}>Contact</a>
+            <a href="/blog"{% if page.title == 'Blog' %} class="active"{% endif %}>Blog</a>
+          </li>
+          <li>
+            <a href="/contact"{% if page.title == 'Contact' %} class="active"{% endif %}>Contact</a>
+          </li>
+          <li>
+            <a href="/resume"{% if page.title == 'R‌&eacute;sum‌&eacute;' %} class="active"{% endif %}>R&eacute;sum&eacute;</a>
           </li>
           <li>
             <a href="https://github.com/pzp1997">GitHub <i class="fa fa-external-link fa-fw" aria-hidden="true"></i></a>
