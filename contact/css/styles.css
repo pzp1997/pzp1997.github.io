@@ -1,23 +1,23 @@
 .form-control,
 .btn {
-  border-radius: 0
+  border-radius: 0;
 }
 .btn {
   background-color: #337ab7;
   border: 2px solid #337ab7;
-  color: #fff
+  color: #fff;
 }
 .btn:hover {
   background-color: #fff;
   border: 2px solid #337ab7;
-  color: #337ab7
+  color: #337ab7;
 }
 .form-group > label,
 .btn {
-  width: 100%
+  width: 100%;
 }
 .panel-title {
-  display: inline-block
+  display: inline-block;
 }
 .panel-heading {
   background-color: #555 !important;

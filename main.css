@@ -48,7 +48,7 @@ a:hover {
 
 .navbar {
   background-color: transparent;
-  border: none
+  border: none;
 }
 .navbar .navbar-brand {
   color: #ddd !important;
@@ -81,7 +81,7 @@ a:hover {
 /* sticky footer */
 html {
   position: relative;
-  min-height: 100%
+  min-height: 100%;
 }
 .footer {
   position: absolute;
