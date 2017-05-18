@@ -1,18 +1,26 @@
 title: Palmer Paul
-description: Palmer Paul's personal website!
+description: Palmer Paul studies computer science at the University of Pennsylvania.
 url: http://palmerpaul.com
 permalink: /blog/:year/:month/:day/:title/
+logo: /favicon.png
 author:
   twitter: pzp1997
 twitter:
   username: pzp1997
-logo: /favicon.png
-gems:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+exclude:
+  - portfolio/
 defaults:
   -
     scope:
-      path: "bower_components/"
+      path: bower_components/
     values:
       sitemap: false
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
