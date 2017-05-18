@@ -7,9 +7,10 @@ layout: default
   <p>{{ page.date | date: "%B %e, %Y" }}</p>
   <br>
 
-  <div class="content">
-    {{ content }}
-  </div>
+  {{ content }}
+
+  <p class="signature">&mdash; {{ page.author }}</p>
+  <br>
 
   {% if page.comments %}
   <div id="disqus_thread"></div>
