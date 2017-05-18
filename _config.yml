@@ -12,15 +12,19 @@ exclude:
 defaults:
   -
     scope:
-      path: bower_components/
+      path: "bower_components/"
     values:
       sitemap: false
   -
     scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: post
+      layout: "post"
+      author: "Palmer Paul"
+      comments: true
+      fonts:
+        - "Pacifico"
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
