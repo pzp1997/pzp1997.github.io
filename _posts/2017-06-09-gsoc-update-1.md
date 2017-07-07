@@ -33,5 +33,3 @@ The updates will be originally posted on the elm-dev email list, and then reprod
 >
 > Regards,<br>
 > Palmer Paul
-
-<br>

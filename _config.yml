@@ -21,10 +21,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Palmer Paul"
+      author: "Palmer"
       comments: true
       fonts:
-        - "Pacifico"
+        - "Damion"
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
