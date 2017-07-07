@@ -9,12 +9,17 @@
 <body>
   {% include analytics.html %}
 
-  <!-- Begin navbar -->
-  {% include navbar.html %}
+  <!-- Navbar -->
+  <header>
+    {% include navbar.html %}
+  </header>
   <!-- End navbar -->
 
-  <!-- Begin page content -->
-  {{ content }}
+
+  <!-- Page content -->
+  <main>
+    {{ content }}
+  </main>
   <!-- End page content -->
 
   <!-- Begin footer -->

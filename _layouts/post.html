@@ -3,14 +3,16 @@ layout: default
 ---
 
 <div class="container">
-  <h1 class="heading orange">{{ page.title }}</h1>
-  <p>{{ page.date | date: "%B %e, %Y" }}</p>
-  <br>
+  <article>
+    <h1 class="heading orange">{{ page.title }}</h1>
+    <p><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %e, %Y" }}</time></p>
+    <br>
 
-  {{ content }}
+    {{ content }}
 
-  <br>
-  <h3 class="signature">&mdash; {{ page.author }}</h3>
+    <br>
+    <h3 class="signature">&mdash; {{ page.author }}</h3>
+  </article>
 
   {% if page.comments %}
   <br>
