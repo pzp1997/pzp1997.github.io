@@ -1,7 +1,7 @@
 ---
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 {% include head.html %}
@@ -26,9 +26,22 @@
   {% include footer.html %}
   <!-- End footer -->
 
-  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
-  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript">
+    function scrollY(id) {
+      return document.getElementById(id).getBoundingClientRect().top;
+    }
+    var navbar = document.getElementsByClassName('navbar')[0];
+    var timeline = scrollY('timeline');
+    var blog = scrollY('blog');
+    var contact = scrollY('contact');
+    window.addEventListener('scroll', function() {
+      var scroll = window.scrollY;
+      var color = scroll < timeline ? '{{ site.data.palette.blue }}'
+                    : scroll < blog ? '{{ site.data.palette.green }}'
+                    :                 '{{ site.data.palette.purple }}';
+      navbar.style.backgroundColor = color + ' !important';
+    });
+  </script> -->
 </body>
 
 </html>

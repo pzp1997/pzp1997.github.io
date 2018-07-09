@@ -1,17 +1,61 @@
 ---
 layout: default
-fonts:
-  - Lobster
-stylesheets:
-  - /css/homepage.css
 ---
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1 class="name-large heading">Palmer <span class="orange">Paul</span></h1>
-    <h2 class="tagline">
-      Software Engineer <span class="orange">&amp;&amp;</span>
-      Undergraduate Student
-    </h2>
+<div class="jumbotron jumbotron-fluid about pt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <!-- TODO get the layout here correct  -->
+        <!-- src="https://media.licdn.com/dms/image/C5603AQF-_ycmUUihOw/profile-displayphoto-shrink_200_200/0?e=1536796800&v=beta&t=S1_kqAUS7dnuUCKP5gSYyanSJ4gZxtI7vUjGZqJSEHY" -->
+        <img
+          src="https://avatars3.githubusercontent.com/u/6352546?s=400&u=bf6df426cf7ee769625321db22f7f267a4bb42e4&v=4"
+          class="float-left rounded-circle mr-5"
+          height="150px"
+          width="150px">
+        <h1 class="display-4 float-left">
+          Palmer Paul
+        </h1>
+        <p class="lead float-left">
+          Software Engineer
+        </p>
+      </div>
+      <div class="col-lg">
+        <p>
+          I study computer science at the University of Pennsylvania as an undergrad in the School of Engineering. My main academic interests are functional programming and programming language design and implementation. Throughout high school and college I have worked on <em>many</em> side projects which can be found on my <a href="https://github.com/pzp1997">GitHub</a>.
+        </p>
+      </div>
+    </div>
   </div>
+</div>
+
+<div id="timeline" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    {% include pages/timeline.html %}
+  </div>
+</div>
+
+<div id="blog" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 pb-3">
+      Blog
+    </h1>
+    {% include pages/blog.html limit=3 %}
+    <h3>
+      See All Posts
+    </h3>
+  </div>
+</div>
+
+<div id="contact" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">
+      Contact
+    </h1>
+    {% include formspree.html %}
+  </div>
+</div>
+
+<div class="scroll-to-top">
+  <a href="#"><i class="fas fa-chevron-up"></i></a>
 </div>
