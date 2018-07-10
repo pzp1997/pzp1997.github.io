@@ -1,0 +1,20 @@
+.navbar {
+  background-color: {{ site.data.palette.white }};
+  /* background-color: #d3d7cf;
+  opacity: 0.9;
+  color: black; */
+}
+#footer, #footer div {
+  background-color: {{ site.data.palette.white }} !important;
+  color: black;
+}
+.social-link {
+  color: #babdb6;
+}
+.social-link:hover {
+  color: {{ site.data.palette.white }};
+  text-decoration: none;
+}
+#footer-text {
+  font-size: 0.75rem;
+}

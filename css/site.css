@@ -83,11 +83,16 @@
 } */
 #blog {
   /* background-color: {{ site.data.palette.green }} !important; */
-  /* background-color: #a40000 !important;
-  color: {{ site.data.palette.white }}; */
-  background-color: {{ site.data.palette.white }}`` !important;
+  /* background-color: #a40000 !important; */
+  /* background-color: #d3d7cf !important; */
+  background-color: teal !important;
+  color: {{ site.data.palette.white }};
+}
+.blog-post {
+  background-color: {{ site.data.palette.white }} !important;
   color: black;
 }
+
 #contact {
   background-color: {{ site.data.palette.purple }} !important;
   color: {{ site.data.palette.white }};

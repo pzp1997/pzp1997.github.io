@@ -1,0 +1,11 @@
+/* TEAM */
+Your title: Palmer Paul.
+Site: email, link to a contact form, etc.
+Twitter: pzp1997.
+Location: New York, USA.
+
+/* SITE */
+Last update: 2018/07/09
+Standards: HTML5, CSS3
+Components: Jekyll, Bootstrap 4.1, Font Awesome 5
+Software: Atom
