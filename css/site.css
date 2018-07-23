@@ -1,12 +1,36 @@
 ---
 ---
 
-.navbar {
-  background-color: {{ site.data.palette.blue }};
-  /* background-color: #d3d7cf;
-  opacity: 0.9;
-  color: black; */
+.narrow {
+  max-width: 60rem;
 }
+.fg-white {
+  color: {{ site.data.palette.white }};
+}
+.bg-white {
+  background-color: {{ site.data.palette.white }} !important;
+}
+.bg-blue {
+  background-color: {{ site.data.palette.blue }};
+}
+.bg-purple {
+  background-color: {{ site.data.palette.purple }} !important;
+}
+.bg-teal {
+  background-color: {{ site.data.palette.teal }} !important;
+}
+.bg-charcoal {
+  background-color: {{ site.data.palette.charcoal }} !important;
+}
+.font-2x {
+  font-size: 2rem;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+/* footer */
 #footer, #footer div {
   background-color: #ce5c00 !important;
   color: {{ site.data.palette.white }};
@@ -19,9 +43,6 @@
   text-decoration: none;
 }
 
-.jumbotron {
-  margin: 0;
-}
 
 .scroll-to-top {
   background-color: #babdb6;
@@ -39,19 +60,9 @@
   color: black;
 }
 
-.about {
-  /* background-color: #204a87 !important; */
-  background-color: {{ site.data.palette.blue }};
-  color: {{ site.data.palette.white }};
-}
-
-
 
 /* timeline */
 
-#timeline {
-  background-color: {{ site.data.palette.charcoal }} !important;
-}
 .timeline-item {
   border-left: 2px solid {{ site.data.palette.white }};
   color: #d3d7cf;
@@ -77,23 +88,9 @@
   top: 1em;
   width: 22px;
 }
-/* .blog {
-  background-color: {{ site.data.palette.white }} !important;
-  color: black;
-} */
-#blog {
-  /* background-color: {{ site.data.palette.green }} !important; */
-  /* background-color: #a40000 !important; */
-  /* background-color: #d3d7cf !important; */
-  background-color: teal !important;
-  color: {{ site.data.palette.white }};
-}
-.blog-post {
-  background-color: {{ site.data.palette.white }} !important;
-  color: black;
-}
 
-#contact {
-  background-color: {{ site.data.palette.purple }} !important;
-  color: {{ site.data.palette.white }};
+input, textarea {
+  background-color: transparent !important;
+  border-width: 3px !important;
+  color: {{ site.data.palette.white }} !important;
 }

@@ -1,23 +1,25 @@
-<nav class="navbar navbar-expand navbar-dark">
-  <div class="container">
-    <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#timeline">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#blog">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% link public-resume.pdf %}">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pzp1997">GitHub</a>
-        </li>
-      </ul>
+<header>
+  <nav class="navbar navbar-expand navbar-dark bg-blue">
+    <div class="container">
+      <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ "#timeline" | absolute_url }}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ "#blog" | absolute_url }}">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ "#contact" | absolute_url }}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.url }}{% link public-resume.pdf %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.data.links.github }}">GitHub</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>

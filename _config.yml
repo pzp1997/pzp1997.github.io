@@ -12,7 +12,7 @@ exclude:
 defaults:
   -
     scope:
-      path: "bower_components/"
+      path: "node_modules/"
     values:
       sitemap: false
   -
@@ -21,11 +21,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Palmer"
       comments: true
-      fonts:
-        - "Damion"
-gems:
+      stylesheets:
+        - css/blog.css
+plugins:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-gist
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed

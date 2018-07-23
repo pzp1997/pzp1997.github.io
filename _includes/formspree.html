@@ -1,20 +1,19 @@
 <div>
-  <br>
   <form id="contact-form" method="POST">
     <div class="mb-3">
       <label for="" class="lead">Name</label>
-      <input type="text" class="form-control" placeholder="John Doe" aria-label="Name" aria-describedby="input-label-name">
+      <input type="text" class="form-control" aria-label="Name" aria-describedby="input-label-name">
     </div>
     <div class="mb-3">
       <label for="" class="lead">Email</label>
-      <input type="email" name="_replyto" class="form-control" placeholder="john.doe@example.com" aria-label="Email" aria-describedby="input-label-email" required>
+      <input type="email" name="_replyto" class="form-control" aria-label="Email" aria-describedby="input-label-email" required>
     </div>
     <input type="hidden" name="_subject" value="Contact Palmer">
     <div class="mb-3">
       <label class="lead">Message</label>
-      <textarea type="text" name="message" rows="5" class="form-control" placeholder="Your message..." aria-label="Message" required></textarea>
+      <textarea type="text" name="message" rows="5" class="form-control" aria-label="Message" required></textarea>
     </div>
-    <input type="text" name="_gotcha" style="display:none">
+    <input type="text" name="_gotcha" class="d-none">
     <div class="form-group">
       <button class="btn btn-light" type="submit">
         Send
@@ -25,39 +24,3 @@
 <script>
   document.getElementById("contact-form").setAttribute("action", atob("aHR0cDovL2Zvcm1zcHJlZS5pby9wenBhdWwyMDAyQHlhaG9vLmNvbQ=="));
 </script>
-
-
-<!-- <div>
-  <br>
-  <form id="contact-form" method="POST">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="input-label-name">Name</span>
-      </div>
-      <input type="text" class="form-control" placeholder="John Doe" aria-label="Name" aria-describedby="input-label-name">
-    </div>
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="input-label-email">Email</span>
-      </div>
-      <input type="email" name="_replyto" class="form-control" placeholder="john.doe@example.com" aria-label="Email" aria-describedby="input-label-email" required>
-    </div>
-    <input type="hidden" name="_subject" value="Contact Palmer">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="input-label-message">Message</span>
-      </div>
-      <textarea type="text" name="message" rows="5" class="form-control" placeholder="Your message..." aria-label="Message" aria-describedby="input-label-message" required></textarea>
-    </div>
-    <input type="text" name="_gotcha" style="display:none">
-    <div class="form-group">
-      <button class="btn btn-light" type="submit">
-        <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-        Send
-      </button>
-    </div>
-  </form>
-</div>
-<script>
-  document.getElementById("contact-form").setAttribute("action", atob("aHR0cDovL2Zvcm1zcHJlZS5pby9wenBhdWwyMDAyQHlhaG9vLmNvbQ=="));
-</script> -->

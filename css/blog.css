@@ -1,10 +1,14 @@
-.navbar {
-  background-color: {{ site.data.palette.white }};
-  /* background-color: #d3d7cf;
-  opacity: 0.9;
-  color: black; */
+---
+---
+
+.bg-charcoal {
+  background-color: {{ site.data.palette.charcoal }} !important;
 }
-#footer, #footer div {
+.narrow {
+  max-width: 60rem;
+}
+
+/* #footer, #footer div {
   background-color: {{ site.data.palette.white }} !important;
   color: black;
 }
@@ -17,4 +21,4 @@
 }
 #footer-text {
   font-size: 0.75rem;
-}
+} */

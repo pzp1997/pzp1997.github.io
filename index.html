@@ -1,59 +1,89 @@
 ---
 layout: default
+stylesheets:
+  - css/site.css
 ---
 
-<div class="jumbotron jumbotron-fluid about pt-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg">
-        <!-- TODO get the layout here correct  -->
-        <!-- src="https://media.licdn.com/dms/image/C5603AQF-_ycmUUihOw/profile-displayphoto-shrink_200_200/0?e=1536796800&v=beta&t=S1_kqAUS7dnuUCKP5gSYyanSJ4gZxtI7vUjGZqJSEHY" -->
+<!-- Navbar -->
+{% include navbar.html %}
+<!-- End navbar -->
+
+<!-- Page content -->
+<main>
+  <div id="about" class="jumbotron jumbotron-fluid bg-blue fg-white pt-3">
+    <div class="container narrow">
+      <div class="text-center mb-4">
         <img
-          src="https://avatars3.githubusercontent.com/u/6352546?s=400&u=bf6df426cf7ee769625321db22f7f267a4bb42e4&v=4"
-          class="float-left rounded-circle mr-5"
+          src="https://avatars3.githubusercontent.com/u/6352546?s=150&u=bf6df426cf7ee769625321db22f7f267a4bb42e4&v=4"
+          class="d-inline-block rounded-circle mr-4"
           height="150px"
           width="150px">
-        <h1 class="display-4 float-left">
-          Palmer Paul
-        </h1>
-        <p class="lead float-left">
-          Software Engineer
-        </p>
+        <div class="d-inline-block align-middle text-left">
+          <h1 class="display-4">
+            Palmer Paul
+            <span class="d-block font-2x">Software Engineer</span>
+          </h1>
+        </div>
       </div>
-      <div class="col-lg">
-        <p>
-          I study computer science at the University of Pennsylvania as an undergrad in the School of Engineering. My main academic interests are functional programming and programming language design and implementation. Throughout high school and college I have worked on <em>many</em> side projects which can be found on my <a href="https://github.com/pzp1997">GitHub</a>.
-        </p>
-      </div>
+      <p>
+        I study computer science at the University of Pennsylvania as an undergrad in the School of Engineering. My main academic interests are functional programming and programming language design and implementation. Throughout high school and college I have worked on <em>many</em> side projects which can be found on my <a href="{{ site.data.links.github }}">GitHub</a>.
+      </p>
     </div>
   </div>
-</div>
 
-<div id="timeline" class="jumbotron jumbotron-fluid">
-  <div class="container">
-    {% include pages/timeline.html %}
+  <div id="timeline" class="jumbotron jumbotron-fluid bg-charcoal">
+    <div class="container narrow">
+      {% for entry in site.data.timeline %}
+      <div class="timeline-item">
+        <span class="timeline-date">{{ entry.date }}</span>
+        <p>
+          {{ entry.text }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-</div>
 
-<div id="blog" class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4 pb-3">
-      Blog
-    </h1>
-    {% include pages/blog.html limit=3 %}
-    <button type="button" class="btn btn-primary btn-lg btn-block">See All Posts</button>
+  <div id="blog" class="jumbotron jumbotron-fluid bg-teal">
+    <div class="container narrow">
+      <h1 class="display-4 fg-white pb-3">
+        Blog
+      </h1>
+      {% for post in site.posts limit:3 %}
+      <div class="card my-4">
+        <div class="card-body bg-white">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <h6 class="card-subtitle text-muted mb-2">
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+              {{ post.date | date: "%B %e, %Y" }}
+            </time>
+          </h6>
+          <p class="card-text">{{ post.excerpt }}</p>
+          <a href="{{ post.url }}" class="card-link">
+            Continue reading...
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+      <a href="{{ "/blog" | absolute_url }}" role="button" class="btn btn-light btn-lg btn-block bg-white">See All Posts</a>
+    </div>
   </div>
-</div>
 
-<div id="contact" class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">
-      Contact
-    </h1>
-    {% include formspree.html %}
+  <div id="contact" class="jumbotron jumbotron-fluid bg-purple fg-white">
+    <div class="container narrow">
+      <h1 class="display-4">
+        Contact
+      </h1>
+      {% include formspree.html %}
+    </div>
   </div>
-</div>
 
-<div class="scroll-to-top">
-  <a href="#"><i class="fas fa-chevron-up"></i></a>
-</div>
+  <div class="scroll-to-top">
+    <a href="#"><i class="fas fa-chevron-up"></i></a>
+  </div>
+</main>
+<!-- End page content -->
+
+<!-- Begin footer -->
+{% include footer.html %}
+<!-- End footer -->

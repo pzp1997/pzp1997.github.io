@@ -1,18 +1,21 @@
 ---
-layout: page
+layout: default
 title: Blog
 ---
 
-{% for post in site.posts %}
-<div class="row">
-  <div class="col-md-4">
+<!-- Navbar -->
+<header>
+  {% include navbar.html %}
+</header>
+<!-- End navbar -->
+
+<div class="container">
+  {% for post in site.posts %}
     <a href="{{ post.url }}"><h2 style="font-style:normal">{{ post.title }}</h2></a>
     <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %e, %Y" }}</time></p>
-  </div>
-  <div class="col-md-8">
+
     {{ post.excerpt }}
     <a href="{{ post.url }}">Read more...</a>
-  </div>
+  <br>
+  {% endfor %}
 </div>
-<br>
-{% endfor %}

@@ -1,5 +1,6 @@
-{% for entry in site.data.social_links %}
-<a href="{{ entry.url }}" class="social-link px-2">
-  <i class="fab fa-{{ entry.glyph }} fa-2x"></i>
+{% assign links = "twitter|github|stack-overflow|linkedin" | split: "|" %}
+{% for link in links %}
+<a href="{{ site.data.links[link] }}" class="social-link px-2">
+  <i class="fab fa-{{ link }} fa-2x"></i>
 </a>
 {% endfor %}
