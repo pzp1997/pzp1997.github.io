@@ -7,6 +7,9 @@
 .fg-white {
   color: {{ site.data.palette.white }};
 }
+.fg-orange {
+  color: {{ site.data.palette.orange }};
+}
 .bg-white {
   background-color: {{ site.data.palette.white }} !important;
 }

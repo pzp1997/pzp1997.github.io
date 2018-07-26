@@ -1,21 +1,26 @@
 ---
 layout: default
 title: Blog
+stylesheets:
+  - css/blog.css
 ---
 
 <!-- Navbar -->
 <header>
-  {% include navbar.html %}
+  <div class="text-center bg-charcoal py-2">
+    <a class="navbar-brand fg-white mr-0" href="{{ "/" | absolute_url }}">PALMER PAUL</a>
+  </div>
 </header>
 <!-- End navbar -->
 
-<div class="container">
+<div class="container narrow">
   {% for post in site.posts %}
-    <a href="{{ post.url }}"><h2 style="font-style:normal">{{ post.title }}</h2></a>
+  <div class="py-4">
+    <a href="{{ post.url }}" class="h2">{{ post.title }}</a>
     <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %e, %Y" }}</time></p>
 
     {{ post.excerpt }}
     <a href="{{ post.url }}">Read more...</a>
-  <br>
+  <div>
   {% endfor %}
 </div>

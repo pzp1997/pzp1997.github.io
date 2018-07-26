@@ -4,8 +4,30 @@
 .bg-charcoal {
   background-color: {{ site.data.palette.charcoal }} !important;
 }
+.fg-white {
+  color: {{ site.data.palette.white }};
+}
 .narrow {
   max-width: 60rem;
+}
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+
+.nav-link {
+  color: #babdb6 !important;
+}
+.nav-link:hover,.navbar-brand:hover {
+  color: {{ site.data.palette.white }} !important;
+}
+
+.social-link {
+  color: #babdb6;
+}
+.social-link:hover {
+  color: {{ site.data.palette.white }};
+  text-decoration: none;
 }
 
 /* #footer, #footer div {

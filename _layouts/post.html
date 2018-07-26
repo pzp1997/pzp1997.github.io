@@ -2,25 +2,11 @@
 layout: default
 ---
 
-<nav class="navbar navbar-expand navbar-dark bg-charcoal">
-  <div class="container narrow">
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav clearfix w-50">
-        <li class="float-left nav-item">
-          <a class="nav-link" href="{{ "/blog" | absolute_url }}">
-            <i class="fas fa-arrow-left"></i>
-            Back to Blog
-          </a>
-        </li>
-        <li class="float-right nav-item">
-          <a class="navbar-brand" href="/">
-            Palmer Paul
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<!-- Navbar -->
+<header>
+{% include blog/navbar.html %}
+</header>
+<!-- End navbar -->
 
 <div class="card">
   <div class="card-body">
@@ -30,34 +16,23 @@ layout: default
         <p class="lead card-subtitle text-muted mb-3">
           <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %e, %Y" }}</time>
         </p>
-
-        <div class="">
-          {{ content }}
-        </div>
-
+        {{ content }}
       </article>
     </div>
   </div>
   {% if page.comments %}
   <div class="card-footer">
-    <h3>Comments</h3>
-    {% include disqus.html %}
+    <div class="container narrow">
+      <h3>Comments</h3>
+      {% include disqus.html %}
+    </div>
   </div>
   {% endif %}
 </div>
 
-<footer id="footer" class="bg-charcoal fg-white">
-  <div class="container narrow clearfix pt-3 pb-2">
-    <div class="float-left">
-      {% include social-links.html %}
-    </div>
-    <div class="float-right text-right small">
-      &copy; 2015-2018 Palmer Paul
-      <br>
-      (<a href="{{ site.data.links.github }}/pzp1997.github.io">view source code</a>)
-    </div>
-  </div>
-</footer>
+<!-- Begin footer -->
+{% include blog/footer.html %}
+<!-- End footer -->
 
 {% if page.latex %}
 <script type="text/javascript" async src="/node_modules/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
