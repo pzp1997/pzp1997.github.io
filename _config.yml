@@ -9,6 +9,8 @@ twitter:
   username: pzp1997
 exclude:
   - portfolio/
+collections:
+  - timeline
 defaults:
   -
     scope:

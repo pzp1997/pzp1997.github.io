@@ -33,14 +33,7 @@ stylesheets:
 
   <div id="timeline" class="jumbotron jumbotron-fluid bg-charcoal">
     <div class="container narrow">
-      {% for entry in site.data.timeline %}
-      <div class="timeline-item">
-        <span class="timeline-date">{{ entry.date }}</span>
-        <p>
-          {{ entry.text }}
-        </p>
-      </div>
-      {% endfor %}
+      {% include timeline.html %}
     </div>
   </div>
 
