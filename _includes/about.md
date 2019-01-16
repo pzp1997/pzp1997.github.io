@@ -1,0 +1,1 @@
+I study computer science at the University of Pennsylvania as an undergrad in the School of Engineering. My main academic interests are functional programming and programming language design and implementation. Throughout high school and college I have worked on _many_ side projects which can be found on my [GitHub]({{ site.data.links.github }}).
