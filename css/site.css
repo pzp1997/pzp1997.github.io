@@ -25,6 +25,9 @@
 .bg-charcoal {
   background-color: {{ site.data.palette.charcoal }} !important;
 }
+.bg-light-green {
+  background-color: {{ site.data.palette.light-green }} !important;
+}
 .font-2x {
   font-size: 2rem;
 }
@@ -96,4 +99,20 @@ input, textarea {
   background-color: transparent !important;
   border-width: 3px !important;
   color: {{ site.data.palette.white }} !important;
+}
+
+a {
+  font-weight: bold;
+}
+
+#about a {
+  color: #ffde03; /* {{ site.data.palette.light-yellow }}; */
+}
+
+#timeline a {
+  color: #4DB6AC;
+}
+
+#footer .float-right a {
+  color: #ffde03;
 }

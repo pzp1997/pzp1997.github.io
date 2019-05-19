@@ -23,6 +23,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      type: "BlogPosting"
       comments: true
       stylesheets:
         - css/blog.css

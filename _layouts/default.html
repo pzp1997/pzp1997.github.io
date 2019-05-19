@@ -24,5 +24,10 @@
   {% include analytics.html %}
 
   {{ content }}
+
+  <script src="/node_modules/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script type="text/javascript">
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 </body>
 </html>

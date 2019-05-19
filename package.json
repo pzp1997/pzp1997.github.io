@@ -9,6 +9,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.1.0",
     "bootstrap": "^4.1.1",
-    "mathjax": "^2.7.4"
+    "mathjax": "^2.7.4",
+    "smooth-scroll": "^16.0.3"
   }
 }

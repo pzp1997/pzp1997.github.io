@@ -15,12 +15,18 @@ stylesheets:
 
 <div class="container narrow">
   {% for post in site.posts %}
-  <div class="py-4">
+  <div class="py-3">
     <a href="{{ post.url }}" class="h2">{{ post.title }}</a>
     <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %e, %Y" }}</time></p>
-
     {{ post.excerpt }}
     <a href="{{ post.url }}">Read more...</a>
+    {% unless forloop.last %}
+    <hr>
+    {% endunless %}
   <div>
   {% endfor %}
 </div>
+
+<!-- Begin footer -->
+{% include blog/footer.html %}
+<!-- End footer -->

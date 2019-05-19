@@ -7,8 +7,11 @@ purple: "#75507b"
 # green: "#4e9a06"
 green: "#1B5E20"
 blue: "#3465a4"
+red: "#cc0000"
 
 bg-about: ""
 bg-timeline: ""
 black: "#000000"
 light-yellow: "#fce94f"
+
+light-green: "#81C784"
