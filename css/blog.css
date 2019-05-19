@@ -14,10 +14,6 @@
   flex-basis: 0;
 }
 
-p {
-  padding-bottom: 10px;
-}
-
 article a {
   border-bottom: 1px transparent;
   color: {{ site.data.palette.red }};

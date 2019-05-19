@@ -5,28 +5,35 @@ stylesheets:
   - css/blog.css
 ---
 
-<!-- Navbar -->
-<header>
-  <div class="text-center bg-charcoal py-2">
-    <a class="navbar-brand fg-white mr-0" href="{{ "/" | absolute_url }}">PALMER PAUL</a>
+
+<div class="d-flex vh-100 flex-column justify-content-center">
+  <!-- Navbar -->
+  <header>
+    <div class="text-center bg-charcoal py-2">
+      <a class="navbar-brand fg-white mr-0" href="{{ "/" | absolute_url }}">PALMER PAUL</a>
+    </div>
+  </header>
+  <!-- End navbar -->
+
+  <div class="flex-grow-1 d-flex flex-column justify-content-center">
+    <div class="container narrow">
+      {% for post in site.posts %}
+      <div class="py-2">
+        <a href="{{ post.url }}" class="h2">{{ post.title }}</a>
+        <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %e, %Y" }}</time></p>
+        {{ post.excerpt }}
+        <a href="{{ post.url }}">Read more...</a>
+        {% unless forloop.last %}
+        <hr>
+        {% endunless %}
+      </div>
+      {% endfor %}
+    </div>
   </div>
-</header>
-<!-- End navbar -->
 
-<div class="container narrow">
-  {% for post in site.posts %}
-  <div class="py-3">
-    <a href="{{ post.url }}" class="h2">{{ post.title }}</a>
-    <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %e, %Y" }}</time></p>
-    {{ post.excerpt }}
-    <a href="{{ post.url }}">Read more...</a>
-    {% unless forloop.last %}
-    <hr>
-    {% endunless %}
-  <div>
-  {% endfor %}
+  <div class="mt-auto">
+    <!-- Begin footer -->
+    {% include blog/footer.html %}
+    <!-- End footer -->
+  </div>
 </div>
-
-<!-- Begin footer -->
-{% include blog/footer.html %}
-<!-- End footer -->
