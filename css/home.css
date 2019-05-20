@@ -8,7 +8,7 @@
 
 /* footer */
 #footer, #footer div {
-  background-color: #ce5c00;
+  background-color: #ce5c00 !important;
   color: {{ site.data.palette.white }};
 }
 
