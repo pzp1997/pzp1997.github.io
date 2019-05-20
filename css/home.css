@@ -1,0 +1,77 @@
+---
+---
+
+
+.jumbotron {
+  margin: 0;
+}
+
+/* footer */
+#footer, #footer div {
+  background-color: #ce5c00;
+  color: {{ site.data.palette.white }};
+}
+
+
+.scroll-to-top {
+  background-color: #babdb6;
+  border-radius: 0.5rem;
+  bottom: 2rem;
+  font-size: 2rem;
+  height: 3rem;
+  opacity: 0.5;
+  position: fixed;
+  right: 2rem;
+  text-align: center;
+  width: 3rem;
+}
+.scroll-to-top a {
+  color: black;
+}
+
+
+/* timeline */
+
+.timeline-item {
+  border-left: 2px solid {{ site.data.palette.white }};
+  color: #d3d7cf;
+  padding: 3em 2em 0.25em;
+  position: relative;
+}
+.timeline-date {
+  color: #babdb6;
+  display: block;
+  left: 2em;
+  position: absolute;
+  top: 1em;
+}
+.timeline-item::after {
+  background: {{ site.data.palette.teal }};
+  border-radius: 22px;
+  border: 2px solid {{ site.data.palette.white }};
+  content: "";
+  display: block;
+  height: 22px;
+  left: -12px;
+  position: absolute;
+  top: 1em;
+  width: 22px;
+}
+
+input, textarea {
+  background-color: transparent !important;
+  border-width: 3px !important;
+  color: {{ site.data.palette.white }} !important;
+}
+
+#about a {
+  color: #ffde03; /* {{ site.data.palette.light-yellow }}; */
+}
+
+#timeline a {
+  color: #4DB6AC;
+}
+
+#footer .float-right a {
+  color: #ffde03;
+}

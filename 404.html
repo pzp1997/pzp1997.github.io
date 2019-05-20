@@ -6,6 +6,19 @@ stylesheets:
   - css/site.css
 ---
 
+<style media="screen">
+  body, #footer {
+    background-color: {{ site.data.palette.blue }};
+    color: {{ site.data.palette.white }};
+  }
+  #footer .float-right a {
+    color: #babdb6;
+  }
+  #footer .float-right a:hover {
+    color: {{ site.data.palette.white }};
+  }
+</style>
+
 <div class="d-flex vh-100 flex-column justify-content-center">
   {% include navbar.html %}
 
@@ -15,9 +28,6 @@ stylesheets:
   </div>
 
   <div class="mt-auto">
-    <div class="container">
-      <hr>
-    </div>
     {% include footer.html %}
   </div>
 </div>
