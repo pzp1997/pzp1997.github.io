@@ -6,13 +6,18 @@ stylesheets:
   - css/site.css
 ---
 
-<div class="jumbotron jumbotron-fluid bg-charcoal fg-white h-100" style="height:100%;">
-  <div class="container text-center">
-    <h1 class="display-4">
-      FOUR<span class="fg-orange">-</span>OH<span class="fg-orange">-</span>FOUR
-    </h1>
-    <a href="{% link index.html %}" class="h3">
-      Follow me back to the homepage.
-    </a>
+<div class="d-flex vh-100 flex-column justify-content-center">
+  {% include navbar.html %}
+
+  <div class="flex-grow-1 d-flex flex-column justify-content-center text-center">
+    <span class="display-2">404</span>
+    <p class="h1">Page not found</p>
+  </div>
+
+  <div class="mt-auto">
+    <div class="container">
+      <hr>
+    </div>
+    {% include footer.html %}
   </div>
 </div>
