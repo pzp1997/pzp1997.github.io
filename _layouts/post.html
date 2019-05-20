@@ -2,25 +2,38 @@
 layout: default
 ---
 
-<div class="container">
-  <article>
-    <h1 class="heading orange">{{ page.title }}</h1>
-    <p><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %e, %Y" }}</time></p>
-    <br>
+<!-- Navbar -->
+<header>
+{% include blog/navbar.html %}
+</header>
+<!-- End navbar -->
 
-    {{ content }}
-
-    <br>
-    <h3 class="signature">&mdash; {{ page.author }}</h3>
-  </article>
-
+<div class="card">
+  <div class="card-body">
+    <div class="container narrow">
+      <article>
+        <h1 class="card-title display-4">{{ page.title }}</h1>
+        <p class="lead card-subtitle text-muted mb-3">
+          <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %e, %Y" }}</time>
+        </p>
+        {{ content }}
+      </article>
+    </div>
+  </div>
   {% if page.comments %}
-  <br>
-  <h3 class="heading">Comments</h3>
-  {% include disqus.html %}
-  {% endif %}
-
-  {% if page.latex %}
-  <script type="text/javascript" async src="/bower_components/MathJax/MathJax.js?config=TeX-AMS_CHTML"></script>
+  <div class="card-footer">
+    <div class="container narrow">
+      <h3>Comments</h3>
+      {% include disqus.html %}
+    </div>
+  </div>
   {% endif %}
 </div>
+
+<!-- Begin footer -->
+{% include blog/footer.html %}
+<!-- End footer -->
+
+{% if page.latex %}
+<script type="text/javascript" async src="/node_modules/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+{% endif %}

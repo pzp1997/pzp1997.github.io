@@ -1,0 +1,15 @@
+{
+  "name": "pzp1997.github.io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "repository": "https://github.com/pzp1997/pzp1997.github.io.git",
+  "author": "Palmer Paul <pzpaul2002@yahoo.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0",
+    "bootstrap": "^4.1.1",
+    "mathjax": "^2.7.4",
+    "smooth-scroll": "^16.0.3"
+  }
+}

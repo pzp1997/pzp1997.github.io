@@ -7,8 +7,6 @@ I started my Google Summer of Code project with the Elm Software Foundation, Elm
 
 The updates will be originally posted on the elm-dev email list, and then reproduced here. In order to keep the discussion in one place, please comment on the [elm-dev post](https://groups.google.com/forum/#!topic/elm-dev/mzU6oBCelH4). The following is a reprint of the first update.
 
-<br>
-
 > Re: Elm for iOS
 >
 > Hi all!

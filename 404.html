@@ -2,18 +2,17 @@
 layout: default
 title: 404
 permalink: /404.html
-fonts:
-  - Lobster
 stylesheets:
-  - /css/homepage.css
+  - css/site.css
 ---
 
-<div class="jumbotron">
+<div class="jumbotron jumbotron-fluid bg-charcoal fg-white h-100" style="height:100%;">
   <div class="container text-center">
-    <h1 class="heading">Four<span style="color:orange;">-</span>Oh<span style="color:orange;">-</span>Four</h1>
-    <h3 class="tagline">Uh oh! It looks like one of us messed up.<br>Either you made a typo or I seriously broke something.</h2>
-    <a href="{% link index.html %}">
-      <h3 class="tagline">You can follow me to get back to the homepage.</h2>
+    <h1 class="display-4">
+      FOUR<span class="fg-orange">-</span>OH<span class="fg-orange">-</span>FOUR
+    </h1>
+    <a href="{% link index.html %}" class="h3">
+      Follow me back to the homepage.
     </a>
   </div>
 </div>

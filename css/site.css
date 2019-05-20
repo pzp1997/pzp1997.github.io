@@ -1,132 +1,118 @@
-/***********/
-/** FONTS **/
-/***********/
+---
+---
 
-/* default fonts */
-body {
-  font-family: 'Roboto', 'Rubik', sans-serif;
-  color: #ddd;
-  background-color: #333;
+.narrow {
+  max-width: 60rem;
 }
-p,
-li {
-  font-size: 1.75rem;
+.fg-white {
+  color: {{ site.data.palette.white }};
 }
-a,
-a:hover,
-a:visited,
-a:active {
-  color: orange;
+.fg-orange {
+  color: {{ site.data.palette.orange }};
+}
+.bg-white {
+  background-color: {{ site.data.palette.white }} !important;
+}
+.bg-blue {
+  background-color: {{ site.data.palette.blue }};
+}
+.bg-purple {
+  background-color: {{ site.data.palette.purple }} !important;
+}
+.bg-teal {
+  background-color: {{ site.data.palette.teal }} !important;
+}
+.bg-charcoal {
+  background-color: {{ site.data.palette.charcoal }} !important;
+}
+.bg-light-green {
+  background-color: {{ site.data.palette.light-green }} !important;
+}
+.font-2x {
+  font-size: 2rem;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+/* footer */
+#footer, #footer div {
+  background-color: #ce5c00 !important;
+  color: {{ site.data.palette.white }};
+}
+.social-link {
+  color: #babdb6;
+}
+.social-link:hover {
+  color: {{ site.data.palette.white }};
+  text-decoration: none;
+}
+
+
+.scroll-to-top {
+  background-color: #babdb6;
+  border-radius: 0.5rem;
+  bottom: 2rem;
+  font-size: 2rem;
+  height: 3rem;
+  opacity: 0.5;
+  position: fixed;
+  right: 2rem;
+  text-align: center;
+  width: 3rem;
+}
+.scroll-to-top a {
+  color: black;
+}
+
+
+/* timeline */
+
+.timeline-item {
+  border-left: 2px solid {{ site.data.palette.white }};
+  color: #d3d7cf;
+  padding: 3em 2em 0.25em;
+  position: relative;
+}
+.timeline-date {
+  color: #babdb6;
+  display: block;
+  left: 2em;
+  position: absolute;
+  top: 1em;
+}
+.timeline-item::after {
+  background: {{ site.data.palette.teal }};
+  border-radius: 22px;
+  border: 2px solid {{ site.data.palette.white }};
+  content: "";
+  display: block;
+  height: 22px;
+  left: -12px;
+  position: absolute;
+  top: 1em;
+  width: 22px;
+}
+
+input, textarea {
+  background-color: transparent !important;
+  border-width: 3px !important;
+  color: {{ site.data.palette.white }} !important;
+}
+
+a {
   font-weight: bold;
 }
-a:hover {
-  color: orange;
-  font-style: italic;
-  text-decoration: none;
-}
-/* special fonts for page headings, branding, etc. */
-.heading {
-  font-family: 'Rubik', 'Roboto', sans-serif;
-  text-transform: uppercase;
-}
-.name {
-  font-size: 3.1em;
-  margin-top: -10px;
-}
-.signature {
-  font-family: 'Damion', 'Roboto', sans-serif;
-  font-size: 3rem;
-}
-.orange {
-  color: orange;
+
+#about a {
+  color: #ffde03; /* {{ site.data.palette.light-yellow }}; */
 }
 
-
-/************/
-/** NAVBAR **/
-/************/
-
-.navbar {
-  background-color: transparent;
-  border: none;
-}
-.navbar .navbar-brand {
-  color: #ddd !important;
-  font-size: 2.25rem;
-}
-.navbar a {
-  color: #777 !important;
-  font-style: normal;
-  font-weight: normal;
-  border-bottom: 2px solid transparent;
-}
-/* indicate which tab mouse is over and active tab */
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a.active {
-  color: #ddd !important;
-  border-bottom-color: orange;
+#timeline a {
+  color: #4DB6AC;
 }
 
-.navbar .profile-photo {
-  /*display: inline-block;*/
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-}
-
-/************/
-/** FOOTER **/
-/************/
-
-/* sticky footer */
-html {
-  position: relative;
-  min-height: 100%;
-}
-.footer {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-}
-/* social links */
-.social-links > a:hover {
-  text-decoration: none;
-}
-.social-link .fa {
-  margin: 8px 15px;
-  color: #777;
-}
-.social-link .fa:hover {
-  color: orange;
-}
-/* restyle footer for smaller screens */
-/* mobile first layout */
-.social-links,
-.footer-text {
-  text-align: center;
-}
-@media all and (min-width: 420px) {
-  .social-links {
-    float: left;
-  }
-  .footer-text {
-    float: right;
-    text-align: right;
-  }
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 80px;
-  }
-  .footer {
-    height: 80px;
-  }
-}
-@media not all and (min-width: 420px) {
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 120px;
-  }
-  .footer {
-    height: 120px;
-  }
+#footer .float-right a {
+  color: #ffde03;
 }

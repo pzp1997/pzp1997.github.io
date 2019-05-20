@@ -12,7 +12,7 @@ Anyway, I'm quite excited for this blog and hope you are as well. I have three g
 
 1. *Share my passion.* I am enthusiastic about the material I plan on writing about. I hope to convey this passion to you the readers via my posts.
 
-2. *Create novel content.* Without interesting content, there will be no readers, and without readers, there will be no blog. If there is some topic that you are itching for me to write about, please [let me know]({% link contact/index.html %}). I am still trying to determine my vision for the future of this blog, so I welcome any suggestions on content or otherwise.
+2. *Create novel content.* Without interesting content, there will be no readers, and without readers, there will be no blog. If there is some topic that you are itching for me to write about, please [let me know]({{ "#contact" | absolute_url}}). I am still trying to determine my vision for the future of this blog, so I welcome any suggestions on content or otherwise.
 
 3. *Become a better writer.* I must admit that writing has never been one of my strong suits. I have always been more of a "math/science" person. That being said, I would like to work on improving my writing and storytelling, and I see this blog as a great avenue to accomplish that goal.
 

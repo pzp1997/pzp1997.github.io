@@ -1,34 +1,33 @@
 ---
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-site-verification" content="JvWenr3if7pwu8kK7P2jsFj0dZZJNS-kuSRfFWrUUxU" />
 
-{% include head.html %}
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+  {% for stylesheet in page.stylesheets %}
+  <link rel="stylesheet" type="text/css" href="{{ stylesheet | absolute_url }}">
+  {% endfor %}
 
+  <title>{{ page.title | default: site.title }}</title>
+
+  {% seo %}
+  {% feed_meta %}
+</head>
 <body>
   {% include analytics.html %}
 
-  <!-- Navbar -->
-  <header>
-    {% include navbar.html %}
-  </header>
-  <!-- End navbar -->
+  {{ content }}
 
-
-  <!-- Page content -->
-  <main>
-    {{ content }}
-  </main>
-  <!-- End page content -->
-
-  <!-- Begin footer -->
-  {% include footer.html %}
-  <!-- End footer -->
-
-  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
-  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/node_modules/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script type="text/javascript">
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 </body>
-
 </html>

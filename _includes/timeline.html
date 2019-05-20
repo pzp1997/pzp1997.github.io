@@ -1,0 +1,9 @@
+{% assign events = site.timeline | sort: 'order' | reverse %}
+{% for event in events %}
+{% unless event.hidden %}
+<div class="timeline-item">
+  <span class="timeline-date">{{ event.title }}</span>
+  {{ event.output }}
+</div>
+{% endunless %}
+{% endfor %}

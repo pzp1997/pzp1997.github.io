@@ -9,10 +9,12 @@ twitter:
   username: pzp1997
 exclude:
   - portfolio/
+collections:
+  - timeline
 defaults:
   -
     scope:
-      path: "bower_components/"
+      path: "node_modules/"
     values:
       sitemap: false
   -
@@ -21,11 +23,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Palmer"
+      type: "BlogPosting"
       comments: true
-      fonts:
-        - "Damion"
-gems:
+      stylesheets:
+        - css/blog.css
+plugins:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-gist
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
