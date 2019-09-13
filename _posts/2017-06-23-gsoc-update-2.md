@@ -35,7 +35,7 @@ The next step is to begin modifying VirtualDom. This begins with designing an in
 
 #### Internals of JSC and RN
 
-(The following section assumes a basic knowledge of JSC. If you are looking for an overview, this [article](http://nshipster.com/javascriptcore/) can catch you up to speed.)
+(The following section assumes a basic knowledge of JSC. If you are looking for an overview, this [article](https://nshipster.com/javascriptcore/) can catch you up to speed.)
 
 JSC provides the ability to marshal values between Obj-C and JS. You can send any serializable value over the bridge. From my understanding, the way it works is by encoding your value/data as a JSON string and decoding and processing it on the other end (the process may be slightly different for primitives and functions). Here are some of the relevant [method headers](https://github.com/WebKit/webkit/blob/5277f6fb92b0c03958265d24a7692142f7bdeaf8/Source/JavaScriptCore/API/JSValueRef.h#L272-L290) for the JSON serialization from the source code for JSC. This process is not cheap, so we want to use it as sparingly as possible.
 
